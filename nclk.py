@@ -1,11 +1,11 @@
 import socket
 
 def main():
-    port = 9999  # Port number to listen on
+    port = 9999 # Port number to listen on
 
     # Start a socket server
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_socket.bind(('localhost', port))
+    server_socket.bind(('172.27.145.119', port))  # Listen on all network interfaces
     server_socket.listen(1)
     print(f"Listening on port {port}")
     while True:

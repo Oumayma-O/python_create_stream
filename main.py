@@ -15,7 +15,7 @@ def main():
 
     # Start a socket server
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_socket.bind(('localhost', port))
+    server_socket.bind(('172.27.145.119', port))  
     server_socket.listen(1)
 
     print(f"Listening on port {port}")
@@ -23,7 +23,7 @@ def main():
     print(f"Connection from {address}")
 
     # Open the CSV file
-    with open('weather.csv', 'r') as file:
+    with open('customer_data.csv', 'r') as file:
         csv_reader = csv.reader(file)
         try:
             while True:

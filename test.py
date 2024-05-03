@@ -5,7 +5,7 @@ def main():
 
     # Create a socket and connect to the server
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    client_socket.connect(('localhost', port))
+    client_socket.connect(('172.27.145.119', port))
 
     try:
         while True:

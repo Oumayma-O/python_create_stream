@@ -6,7 +6,7 @@ import random
 process = subprocess.Popen(['nc', '-lk', '9999'], stdin=subprocess.PIPE)
 
 # Open the CSV file
-with open('weather.csv', 'r') as file:
+with open('customer_data.csv', 'r') as file:
     reader = csv.reader(file)
     
     # Convert the reader to a list and shuffle it
